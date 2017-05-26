@@ -23,13 +23,10 @@ var config = {
         test: /\.css$/,
         loader: "style-loader!css-loader"
       },
-      // {
-      //   test: /\.gif$/,
-      //   loaders: [
-      //     'file-loader?name=[path][name].[ext]',
-      //     'image-webpack',
-      //   ]
-      // },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"]
+      },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
